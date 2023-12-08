@@ -5,7 +5,7 @@ const Card = ({news}) => {
   return (
     <div className='column'>
       <figure className="snip1493">
-  <div className="image"><img src={news.urlToImage} alt="ls-sample1" /></div>
+  <div className="image"><img src={news.image} alt="ls-sample1" /></div>
   <figcaption>
     <div className="date"><span className="day">{news.author}</span><span className="month">{news.publishedAt}</span></div>
     <h3>{news.title}</h3>

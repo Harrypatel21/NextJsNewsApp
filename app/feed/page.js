@@ -5,12 +5,13 @@ import { fetchNews } from '../fetchNews.js';
 
 const page = () => {
     const [news, setNews] = useState([]);
-
+    
     useEffect(() => {
         // Fetch news when the component mounts
         const getNews = async () => {
           try {
             const response = await fetchNews();
+            console.log(news);
             setNews(response.articles);
           } catch (error) {
             console.error('Error fetching news:', error);
@@ -20,6 +21,7 @@ const page = () => {
         getNews();
       }, []);
       // console.log(news[0]);
+      // console.log("newssss", news);
   return (
     <div className="row">
       
