@@ -6,7 +6,7 @@ const fetchNews = async () => {
       `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
     );
 
-    if (!response.ok) {
+    if (!response.status=="ok") {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
