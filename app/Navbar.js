@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <div className={styles.main}>
-      <div onClick={() => router.push('/')}>Home</div>
+      <div onClick={() => router.push('./')}>Home</div>
       <div onClick={() => router.push('/feed')}>Feed</div>
       <div onClick={() => router.push('./about')}>About</div>
-      <div onClick={() => router.push('/favourites')}>Favourites</div>
+      <div onClick={() => router.push('./favourites')}>Favourites</div>
     </div>
   )
 }
